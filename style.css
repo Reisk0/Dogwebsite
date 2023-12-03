@@ -1,0 +1,98 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+#h1color{
+  position: relative;
+  left: 50%;
+  background-color: beige;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  width: 370px;
+  justify-content: auto;
+  
+}
+
+#box1{
+  position: relative;
+  left: 60%;
+  font-family:serif; /* tipo de letra que quieres usar como en word*/
+  margin: 10%;
+}
+
+.box2{
+  position: relative;
+  left: 60%;
+  margin: 10%;
+}
+
+.box3{
+  position: relative;
+  left: 60%;
+  margin: 10%;
+  height: 0%;
+}
+
+.box4{
+  position: relative;
+  left: 60%;
+  margin: 10%;
+}
+
+body {
+  background-image: url(img/PUPPY\ BACKGROUND.jpg);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+.box {
+  background-color: #FFF8DC;
+  color: black;/* este es el color de la letra de texto */
+  display: flex;
+  align-items: auto; /* con esto puedes seleccionar los items que quieras alinear*/
+  justify-content: auto; /* con esto puedes alinear el texto de la caja de texto*/
+  width: 90%; /* con manejas la posicion orizontal de la caja para moverla a tu gusto*/
+  height: 0%;/* con esto manejas la altura de la caja de texto de tu article IMPORTANTE CUANDO PONES EL PORCENTAJE CERO POR ALGUNA RAZON LA CAJA SE ADAPTA AL TEXTO QUE TENGAS*/ 
+  margin: 10%; /* esta es la divicion que hay entre cada caja*/
+  border-radius: 25px;/* con puedes ovalar tus article*/
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+  font-family:serif; /* tipografia que quieras usar como en word*/
+}
+/* c=NOTAS PARA LA SIGUIENTE SESION, PONER IMAGENES CON OVERLAY Y PONER TITUTLOS Y SUBTITULOS EN LA CAJAS DE TEXTO*/
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 30px;/*con esto puede manejar el tamano de la letra, en este caso los h2 que esten dentro de la clase box*/
+}
+
+.box pre {
+  margin: 3%;
+  margin-top: -5%;
+  font-size: 15px;
+  font-style: serif;
+}
+h1 {
+  margin: 3%;
+}
+
+.box pre {
+  margin-top: -5%;
+
+}
